@@ -1,0 +1,70 @@
+
+  img {
+    border-radius: 20px;     
+  }
+
+  .picture1{
+    width: 100%; 
+    height: auto; 
+    display: block; 
+  }
+
+  
+  .picture1:hover {
+    transform: scale(1.1); /* zoom in by 10% */
+    transition: transform 0.3s ease; /* smooth animation */
+    z-index: 1;
+  }
+
+  .picture2{
+    width: 60%; 
+    height: auto; 
+    display: block; 
+  }
+
+  .picture2:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+    z-index: 1;
+  }
+
+
+  .picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .picture3{
+    width: 80%; 
+    height: auto; 
+    display: block; 
+    border-radius: 50%;
+  }
+
+  .picture3:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+    z-index: 1;
+  }
+
+
+  [nz-button]{
+    background-color: #E4DFB5;
+    border-color: #E4DFB5;
+    color: #C4822B;
+    width: 80%;
+    font-size: large;
+    font-family: 'Ultra', serif;
+    font-weight: 400;
+    letter-spacing: 0%;
+  }
+
+.bellow{
+    color: #C4822B;
+    font-size: 24px;
+    font-family: 'Ultra', serif;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: center;
+}

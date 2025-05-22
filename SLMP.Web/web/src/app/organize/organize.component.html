@@ -1,0 +1,83 @@
+<div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+    <div nz-col class="gutter-row" [nzSpan]="6"><div class="inner-box"></div></div>
+    <div nz-col class="gutter-row" [nzSpan]="6"><div class="inner-box">
+        <br>
+        <div class="box1">
+            <p> Inventory management </p>
+        </div>
+        <br>
+        <br>
+        <div class="box1" routerLink="/groceries">
+            <p> View Your shopping list </p>
+        </div>
+
+    </div></div>
+    <div nz-col class="gutter-row" [nzSpan]="6">
+<br>
+        <div class="inner-box">
+            <div class="lista">
+                 <br>
+            <div class="date">
+                <p class="title">
+                    Add a new item :) 
+                  </p>
+                  <p> Name:</p>
+                  <input nz-input placeholder="Item name" [(ngModel)]="name" type="text" />
+                  <br>
+                 <p> Quantaty</p> <nz-input-number [(ngModel)]="quantity" nzMin="1" nzMax="10" />
+                 <br>
+                 <p> Input date and EX. date</p>
+                 <nz-date-picker [(ngModel)]="date"
+                 [nzSize]="size"
+                 (ngModelChange)="onChange($event)"></nz-date-picker>
+                <br>
+                <button nz-button nzType="primary" (click)="addItem()" [nzSize]="size" nzShape="round">
+                    <nz-icon nzType="download" />
+                    ADD
+                  </button>
+                  <br>
+            </div>
+            </div>
+           
+        </div></div>
+    <div nz-col class="gutter-row" [nzSpan]="6"><div class="inner-box"></div></div>
+  </div>
+
+  <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+    <div nz-col class="gutter-row" [nzSpan]="6"><div class="inner-box"></div></div>
+
+    <div nz-col class="gutter-row" [nzSpan]="12"><div class="inner-box">
+      <br>  <div class="lista">
+            
+            <nz-list nzBordered nzHeader="Ingredients" nzFooter="Manage your food" class="title">
+            <nz-list-item *ngFor="let item of ingredients">
+              <nz-list-item-meta
+                [nzTitle]="item.name"
+                [nzDescription]="'Quantity: ' + item.quantity"
+              ></nz-list-item-meta>
+          
+              <ul nz-list-item-actions>
+                <nz-list-item-action>
+                  <input nz-input type="number" [ngModel]="item.quantity" (ngModelChange)="updateQuantity(item, $event)" style="width: 60px;" />
+                </nz-list-item-action>
+          
+                <nz-list-item-action>
+                  <span *ngIf="isExpiringSoon(item.expiryDate)" style="color: red;">🚨 Expiring Soon!</span>
+                </nz-list-item-action>
+
+                <nz-list-item-action>
+                  <button nz-button nzType="default" (click)="deleteItem(item.id)">
+                    🗑️ Remove
+                  </button>
+                </nz-list-item-action>
+                
+              </ul>
+            </nz-list-item>
+          </nz-list>
+        </div>
+        
+          
+
+    </div></div>
+    <div nz-col class="gutter-row" [nzSpan]="6"><div class="inner-box"></div></div>
+  </div>

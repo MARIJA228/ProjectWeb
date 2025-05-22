@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cVp5CXprmNln0fVHsxvG5kf1CGHnoIM+Uz2buTcMh0E=",
+  "Source": "SLMP.API",
+  "BasePath": "_content/SLMP.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

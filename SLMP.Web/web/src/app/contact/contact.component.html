@@ -1,0 +1,80 @@
+ <div class="title">
+        <p>CONTACT US</p>
+    </div>
+
+<div nz-row>
+  <div nz-col nzSpan="2" >
+
+  </div>
+  <div nz-col nzSpan="5">
+    <div class="image-stack">
+      <img src="assets/chick.jpg" alt="chick">
+      <img src="assets/bowl.jpg" alt="bowl">
+      <br>
+  </div>
+  </div>
+  <div nz-col nzSpan="5">
+    <div class="image-stack">
+
+        <img src="assets/pasta.jpg" alt="pasta">
+        <img src="assets/fruit.jpg" alt="fruit">
+    </div>
+  </div>
+  <div nz-col nzSpan="5">
+    <br>
+    <br>
+    <br>
+<div class="box">
+  <br>
+   <nz-input-group [nzSuffix]="suffixTemplateInfo" [nzPrefix]="prefixTemplateUser">
+    <input type="text" nz-input placeholder="Enter your username" />
+  </nz-input-group>
+  <ng-template #prefixTemplateUser><nz-icon nzType="user" /></ng-template>
+  <ng-template #suffixTemplateInfo>
+    <nz-icon nz-tooltip nzTooltipTitle="Extra information" nzType="info-circle" />
+  </ng-template>
+  <br />
+  <br />
+  <nz-input-group [nzSuffix]="suffixTemplateInfo" [nzPrefix]="prefixTemplateUser">
+    <input type="text" nz-input placeholder="Enter your email" />
+  </nz-input-group>
+  <br />
+  <br />
+  <form nz-form [formGroup]="form" nzLayout="vertical">
+    <nz-form-item>
+      <nz-form-control>
+        <nz-textarea-count [nzMaxCharacterCount]="100">
+          <textarea rows="4" formControlName="comment" nz-input></textarea>
+        </nz-textarea-count>
+      </nz-form-control>
+    </nz-form-item>
+  </form>
+  <button nz-button nzType="primary" [nzSize]="size" nzShape="round">
+    <nz-icon nzType="download" />
+    Send
+  </button>
+</div>
+
+  </div>
+
+  <div nz-col nzSpan="6">
+    <br>
+    <br>
+    <br>
+    <div class="side">
+        <h2>
+            Contact
+        </h2>
+        <h4> email: </h4>
+        <h2>
+            Based in
+        </h2>
+        <h4> Graz, Austria</h4>
+    </div>
+  </div>
+</div>
+
+
+
+
+

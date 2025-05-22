@@ -1,0 +1,74 @@
+
+  .title{
+    color: #E4DFB5;
+    font-size: 50px;
+    font-family: Ultra;
+    font-weight: 400;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .box{
+    background-color: #E4DFB5;
+    color: #C4822B;
+    font-size: large;
+    font-family: 'Ultra', serif;
+    font-weight: 400;
+    letter-spacing: 0%;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 20px;
+  }
+
+  [nz-button]{
+    background-color: #C4822B;
+    border-color: #C4822B;
+    color: #E4DFB5;
+    font-size: 20px;
+    font-family: Ultra;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+  }
+
+  .side h2,
+  .side h4 {
+  color: #C4822B;
+}
+
+
+  
+  .side{
+    color: #C4822B;   
+    font-size: 20px;
+    font-family: Ultra;
+    font-weight: 400;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .image-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; 
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .image-stack img {
+    width: 100%;
+    height: auto;
+    border-radius: 32px;
+    object-fit: cover;
+  }

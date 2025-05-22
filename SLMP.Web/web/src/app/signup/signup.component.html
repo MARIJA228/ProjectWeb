@@ -1,0 +1,49 @@
+
+  <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+    <div nz-col class="gutter-row" [nzSpan]="7"><div class="inner-box"></div></div>
+    <div nz-col class="gutter-row" [nzSpan]="10"><div class="inner-box">
+        <br>
+        <div class="box">
+            <br>
+            <br>
+            <p class="title">
+              sign up :) 
+            </p>
+
+
+            <form [formGroup]="signupForm" nz-form (ngSubmit)="onRegister()"> 
+              <nz-form-item> 
+                <nz-form-label [nzSpan]="6" nzRequired>Username: </nz-form-label>
+                <nz-form-control [nzSpan]="14">
+                  <input nz-input formControlName="username" placeholder="Username" />
+                </nz-form-control>
+              </nz-form-item>
+            
+              <nz-form-item>
+                <nz-form-label [nzSpan]="6" nzRequired>Email </nz-form-label>
+                <nz-form-control [nzSpan]="14">
+                  <input nz-input formControlName="email"  type="email" placeholder="Email" />
+                </nz-form-control>
+              </nz-form-item>
+            
+              <nz-form-item>
+                <nz-form-label [nzSpan]="6" nzRequired>Password: </nz-form-label>
+                <nz-form-control [nzSpan]="14">
+                  <input nz-input formControlName="password" type="password" placeholder="Password" />
+                </nz-form-control>
+              </nz-form-item>
+            
+              <nz-form-item>
+                <nz-form-control [nzOffset]="6" [nzSpan]="14">
+                  <button nz-button nzType="primary" type="submit">Sign Up</button>
+                </nz-form-control>
+              </nz-form-item>
+            </form>
+            
+
+
+        </div>
+        
+    </div></div>
+    <div nz-col class="gutter-row" [nzSpan]="7"><div class="inner-box"></div></div>
+  </div>

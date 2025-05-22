@@ -1,0 +1,84 @@
+[nz-menu] {
+    background-color: #556B2F;
+    color:#C4822B;
+    width: 100%;
+    font-size: 30px;
+    font-family: Ultra;
+    font-weight: 400;
+    letter-spacing: 0%;
+  }
+
+  ul[nz-menu] {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #556B2F;
+    color: #C4822B;
+  }
+
+  ul[nz-menu].horizontal-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  ul[nz-menu].vertical-menu {
+    display: inline-block;
+    width: auto;
+    padding: 0;
+    background: #976D2C;
+    color: #556B2F;
+    font-size: 26px;
+    font-family: Ultra;
+    font-weight: 400;
+    letter-spacing: -2%;
+  }
+
+
+
+#homeId{
+    background-color:#556B2F;
+    color:C4822B;
+}
+
+
+[nz-menu-item]:hover{
+    background-color: #BDB76B;
+    color: white!important;
+    
+}
+
+[nz-menu-item]::selection {
+    color: #fff;
+    background: #BDB76B;
+}
+
+[nzSelected]{
+    color: #fff;
+    background: #BDB76B !important;
+}
+
+#btnProfile{
+    float: right;
+    //border-color: #556B2F;
+    //border: 2px solid;
+}
+
+.right-align {
+  margin-left: auto;
+}
+
+li.spacer {
+  flex: 1;
+}
+
+nz-header {
+  background: #556B2F !important;
+  padding: 0 !important;
+}
+
+.spacer {
+  flex: 1;
+}

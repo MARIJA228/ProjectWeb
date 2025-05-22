@@ -1,0 +1,88 @@
+<br>
+<div nz-row>
+    <div nz-col nzSpan="6"></div>
+    <div nz-col nzSpan="6">
+        <br>
+        <div class="box2">
+            <p> Create a new shopping list </p>
+        </div>
+        <br>
+        <br>
+        <div class="box2">
+            <p> View Your shopping list </p>
+        </div>
+        <br>
+        <br>
+
+        
+    </div>
+    <div nz-col nzSpan="1"></div>
+
+    <div nz-col nzSpan="6">
+
+        <div class="box1">
+            <div class="date">
+             <p class="title">
+                 Add a new item :) 
+               </p>
+               <p> Name:</p>
+               <input nz-input placeholder="Item name" [(ngModel)]="name" type="text" />
+               <br>
+              <p> Quantaty</p> <nz-input-number [(ngModel)]="quantity" nzMin="1" nzMax="10" />
+              <br>
+             <br>
+             <button class="button" nz-button nzType="primary" [nzSize]="size" nzShape="round" (click)="addItem()">
+                 <nz-icon nzType="download" />
+                 ADD
+               </button>
+               <br>
+         </div> 
+         
+         </div>
+      
+    </div>
+    <div nz-col nzSpan="6">
+
+    </div>
+  </div>
+
+  <div nz-row [nzGutter]="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+    <div nz-col class="gutter-row" [nzSpan]="6"><div class="inner-box"></div></div>
+    <div nz-col class="gutter-row" [nzSpan]="12"><div class="inner-box">
+        <br>
+        <div class="box1">
+            <p class="title">
+    Shopping list
+</p>
+<nz-list
+nzBordered
+[nzDataSource]="shoppingList"
+[nzRenderItem]="item"
+[nzItemLayout]="'horizontal'"
+>
+
+<ng-template #item let-item let-i="index">
+<nz-list-item>
+<div class="shopping-list-item">
+<div class="item-name">{{ item.name }}</div>
+
+<div class="item-quantity">
+  <nz-input-number
+    [ngModel]="item.quantity"
+    (ngModelChange)="updateQuantity(i, $event)"
+    [nzMin]="1"
+  ></nz-input-number>
+</div>
+
+<div class="item-remove">
+  <button nz-button nzType="default" (click)="removeItem(i)">❌</button>
+</div>
+</div>
+</nz-list-item>
+</ng-template>
+</nz-list>
+</div>
+
+    </div></div>
+    <div nz-col class="gutter-row" [nzSpan]="6"><div class="inner-box"></div></div>
+  </div>

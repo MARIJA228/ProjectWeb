@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SLMP.API", "SLMP.API\SLMP.API.csproj", "{AE48DE2A-F347-42EE-B188-E7109F25F391}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SLMP.Domain", "SLMP.Domain\SLMP.Domain.csproj", "{ACA2CFE9-5DF3-489B-BF07-BF5CA15ECDDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLMP.Web", "SLMP.Web\SLMP.Web.csproj", "{5ED62D43-9EBF-4199-A980-1375554C872B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE48DE2A-F347-42EE-B188-E7109F25F391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE48DE2A-F347-42EE-B188-E7109F25F391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE48DE2A-F347-42EE-B188-E7109F25F391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE48DE2A-F347-42EE-B188-E7109F25F391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACA2CFE9-5DF3-489B-BF07-BF5CA15ECDDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA2CFE9-5DF3-489B-BF07-BF5CA15ECDDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA2CFE9-5DF3-489B-BF07-BF5CA15ECDDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA2CFE9-5DF3-489B-BF07-BF5CA15ECDDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ED62D43-9EBF-4199-A980-1375554C872B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED62D43-9EBF-4199-A980-1375554C872B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ED62D43-9EBF-4199-A980-1375554C872B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ED62D43-9EBF-4199-A980-1375554C872B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C295F41-950F-4ED0-9DB7-7A5FFAC468AB}
+	EndGlobalSection
+EndGlobal

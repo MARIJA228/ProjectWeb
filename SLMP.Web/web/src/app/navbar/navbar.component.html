@@ -1,0 +1,47 @@
+<nz-layout>
+    <nz-header>
+      <ul nz-menu nzMode="horizontal" class="horizontal-menu">
+        <li nz-menu-item routerLink="/welcome" id="homeId"><strong>SLMP</strong></li>
+        <li nz-menu-item routerLink="/aboutus"><strong>About</strong></li>
+        <li nz-menu-item routerLink="/contact"><strong>Contact</strong></li>
+
+        <li class="spacer"></li>
+
+         <!-- Show Log in when user is NOT logged in -->
+  <li *ngIf="!isLoggedIn" nz-menu-item routerLink="/login" class="right-align">
+    <strong>Log in</strong>
+  </li>
+
+  <!-- Show Log out when the user is logged in -->
+  <li *ngIf="isLoggedIn" nz-menu-item (click)="logout()" class="right-align">
+    <strong>Log out</strong>
+  </li>
+              </ul>
+    </nz-header>
+  </nz-layout> 
+  
+<!-- the sider which is at this point redundent, maybe to add later 
+ <nz-sider [nzWidth]="240" class="menu-sider">
+    <ul nz-menu [nzMode]="'vertical'" class="vertical-menu">
+    <li nz-submenu routerLink="/welcome" nzTitle="home" nzIcon="home">
+    </li>
+    <li nz-submenu routerLink="/inspo" nzTitle="inspo" nzIcon="shop" >
+    </li>
+    <li nz-submenu routerLink="/recepies" nzTitle="recepies" nzIcon="tags">
+    </li>
+    <li nz-submenu routerLink="/groceries" nzTitle="groceries" nzIcon="table">
+    </li>
+    <li nz-submenu nzTitle="upload" nzIcon="upload">
+    </li>
+    <br>
+    <li nz-submenu nzTitle="settings" nzIcon="setting">
+    </li>
+  </ul>
+</nz-sider>-->
+
+
+
+  
+
+
+ 

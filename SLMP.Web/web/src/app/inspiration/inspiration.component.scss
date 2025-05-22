@@ -1,0 +1,52 @@
+
+  img {
+    border-radius: 20px;
+    
+  }
+
+  .picture{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  [nz-button]{
+    background-color: #E4DFB5;
+    border-color: #E4DFB5;
+    color: #C4822B;
+    font-size: 20px;
+    font-family: Ultra;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: center;
+ 
+  }
+
+  
+  [nz-button]:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+    z-index: 1;
+  }
+
+  .title{
+    color: #E4DFB5;
+    font-size: 50px;
+    font-family: Ultra;
+    font-weight: 400;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .title2{
+    font-size: 26px;
+    font-family: Ultra;
+    font-weight: 400;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center; 
+    color: #E4DFB5;
+  }
