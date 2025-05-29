@@ -42,7 +42,7 @@ Getting Started
         This should run at http://localhost:4200/
    
 
-Make sure both backend and frontend are running! 
+Make sure both backend and frontend are running! :)
 
 
 
