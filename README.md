@@ -1,6 +1,6 @@
 Getting Started
 
-1. Clone the Repository
+1. **Clone the Repository** 
    git clone https://github.com/MARIJA228/ProjectWeb 
    cd ProjectWeb
 
