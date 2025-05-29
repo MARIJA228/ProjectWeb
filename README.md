@@ -1,11 +1,11 @@
-Getting Started
+**Getting Started***
 
-1. **Clone the Repository** 
-   git clone https://github.com/MARIJA228/ProjectWeb 
-   cd ProjectWeb
+1. **Clone the Repository**     
+   git clone https://github.com/MARIJA228/ProjectWeb    
+   cd ProjectWeb    
 
 
-2. **Requirements**
+2. **Requirements**     
  ->  .NET 6 SDK or later  
  ->  SQL Server   
  ->  Node.js & npm   
