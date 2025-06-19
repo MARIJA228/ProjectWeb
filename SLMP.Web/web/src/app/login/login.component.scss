@@ -51,8 +51,8 @@
   flex-direction: column;
 }
 
-/* Phones (≤768px) */
-@media (max-width: 768px) {
+  /* Small screens (phones) */
+  @media (max-width: 768px) {
   div[nz-col] {
     width: 100% !important;
     max-width: 100% !important;

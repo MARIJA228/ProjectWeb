@@ -69,8 +69,8 @@
     text-align: center;
 }
 
-/* Small screens (phones) */
-@media (max-width: 768px) {
+  /* Small screens (phones) */
+  @media (max-width: 768px) {
   [nz-col] {
     width: 100% !important;
     max-width: 100% !important;
@@ -107,7 +107,7 @@
   }
 }
 
-/* Medium screens (tablets/small laptops) */
+/* Tablets (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   [nz-col] {
     width: 50% !important;

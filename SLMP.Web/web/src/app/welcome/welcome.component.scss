@@ -105,8 +105,8 @@
 
   }
 
-//for smaller screens
-@media (max-width: 768px) {
+  /* Small screens (phones) */
+  @media (max-width: 768px) {
     .title {
       font-size: 1.4rem;
       padding: 0.5rem;

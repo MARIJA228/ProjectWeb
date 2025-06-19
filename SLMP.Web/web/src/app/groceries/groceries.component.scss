@@ -73,8 +73,8 @@
   flex-direction: column;
 }
 
+  /* Small screens (phones) */
 @media (max-width: 768px) {
-  /* Reduce padding and spacing for smaller screens */
   .box1,
   .box2 {
     font-size: medium;
@@ -84,7 +84,7 @@
   }
 
   .box2 {
-    height: auto; /* Let it grow naturally */
+    height: auto; 
   }
 
   .title {
