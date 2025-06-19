@@ -68,3 +68,78 @@
     letter-spacing: 0%;
     text-align: center;
 }
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  [nz-col] {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  nz-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .picture1,
+  .picture2,
+  .picture3 {
+    width: 90% !important;
+    height: auto;
+  }
+
+  .picture {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  [nz-button] {
+    font-size: 16px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+
+  .bellow {
+    font-size: 18px;
+  }
+}
+
+/* Medium screens (tablets/small laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  [nz-col] {
+    width: 50% !important;
+    max-width: 50% !important;
+    flex: 0 0 50% !important;
+  }
+
+  nz-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .picture1,
+  .picture2,
+  .picture3 {
+    width: 80% !important;
+    height: auto;
+  }
+
+  .picture {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+
+  [nz-button] {
+    font-size: 18px;
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .bellow {
+    font-size: 20px;
+  }
+}

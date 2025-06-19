@@ -72,3 +72,45 @@
   justify-content: center; 
   flex-direction: column;
 }
+
+@media (max-width: 768px) {
+  /* Reduce padding and spacing for smaller screens */
+  .box1,
+  .box2 {
+    font-size: medium;
+    padding: 1rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .box2 {
+    height: auto; /* Let it grow naturally */
+  }
+
+  .title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .shopping-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-name,
+  .item-quantity,
+  .item-remove {
+    width: 100%;
+    text-align: left;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+  }
+
+  .gutter-row {
+    margin-bottom: 16px;
+  }
+}

@@ -87,3 +87,77 @@ ul[nz-list-item-actions] input[type="number"] {
   width: 80px;
   min-width: 60px;
 }
+
+/* Small screens (phones) */
+@media (max-width: 768px) {
+  [nz-col] {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  nz-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box1, .lista, .date {
+    width: 90% !important;
+    margin: 0 auto 1.5rem auto;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  [nz-input], nz-input-number, nz-date-picker {
+    width: 90% !important;
+    margin-bottom: 1rem;
+  }
+
+  [nz-button] {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  nz-list-item-meta {
+    margin-bottom: 0.5rem;
+  }
+
+  ul[nz-list-item-actions] {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+
+  ul[nz-list-item-actions] input[type="number"] {
+    width: 100%;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  [nz-col] {
+    width: 50% !important;
+    max-width: 50% !important;
+    flex: 0 0 50% !important;
+  }
+
+  .box1, .lista, .date {
+    width: 90%;
+    margin: 0 auto 1.5rem auto;
+    padding: 1.5rem;
+  }
+
+  [nz-button] {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  ul[nz-list-item-actions] input[type="number"] {
+    width: 80px;
+  }
+}

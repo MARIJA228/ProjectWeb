@@ -43,3 +43,65 @@
   nz-form-label {
     min-width: 100px;
   }
+
+  /* Phones (≤768px) */
+@media (max-width: 768px) {
+  div[nz-col] {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .log {
+    width: 90%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+
+  .login-form-button {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .login-form-forgot {
+    float: none;
+    display: block;
+    text-align: right;
+    margin-top: 8px;
+  }
+
+  .login-form-margin {
+    margin-bottom: 12px;
+  }
+}
+
+/* Tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  div[nz-col] {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  .log {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+}

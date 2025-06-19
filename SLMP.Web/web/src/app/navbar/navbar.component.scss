@@ -18,10 +18,18 @@
 
   ul[nz-menu].horizontal-menu {
     display: flex;
-    flex-direction: row;
+    align-items: center; /* Vertically center items */
+    flex-wrap: wrap;     /* Allow wrapping on small screens */
     gap: 24px;
-    margin-right: auto;
-    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0 16px;
+    box-sizing: border-box;
+    scrollbar-width: none; /* For Firefox */
+  }
+
+  ul[nz-menu].horizontal-menu::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari */
   }
 
   ul[nz-menu].vertical-menu {
@@ -81,4 +89,20 @@ nz-header {
 
 .spacer {
   flex: 1;
+}
+
+@media (max-width: 768px) {
+  ul[nz-menu].horizontal-menu {
+    gap: 12px;
+    font-size: 18px;
+    padding: 0 8px;
+  }
+
+  .right-align {
+    margin-left: auto;
+  }
+
+  li[nz-menu-item] {
+    padding: 0 4px;
+  }
 }
