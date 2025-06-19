@@ -88,7 +88,7 @@ ul[nz-list-item-actions] input[type="number"] {
   min-width: 60px;
 }
 
-/* Small screens (phones) */
+ /* Small screens (phones) */
 @media (max-width: 768px) {
   [nz-col] {
     width: 100% !important;
@@ -138,7 +138,7 @@ ul[nz-list-item-actions] input[type="number"] {
   }
 }
 
-/* Tablets (769px - 1024px) */
+  /* Tablets (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   [nz-col] {
     width: 50% !important;
